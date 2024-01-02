@@ -16,3 +16,7 @@ print(list10Desc)
 # print 10 to 0 empty list as step is wrong
 list10Empty = list(range(10, 0, 2))
 print(list10Empty)
+
+x = [1,2,3,4,5,6,7,8,9]
+for i in x:
+    print("Square of {} = {}".format(i, i*i))
