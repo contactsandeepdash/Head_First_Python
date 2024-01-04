@@ -11,6 +11,12 @@ def log_request(req: str, res: str) -> None:
     with open('vsearch.log', 'a') as log :
         print(req, res, file=log)
 
+def log_request(req: str, res: str) -> None:
+    with open('vsearch.log', 'a') as log:
+        print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
+        contents = log.readlines()
+    return escape(''.join(contents))      
+
 @app.route('/')
 def hello() -> str:
     return 'Hello world from Flask!'
