@@ -84,3 +84,6 @@ print('total_amount_dynamic_with_discount_and_kwargs: {}'.format(total_amount_dy
 additionals = {'discount': 0.05, 'cashback': 5}
 ta, ns, rp = order_summary(700, 599, 750, **additionals)
 print('Customer order summary:\n', '\nTotal Amount:', ta, '\nNet Spend:', ns, '\nRewards point earned:', rp)
+
+for i in (x*3 for x in [1, 2, 3, 4, 5]):
+    print(i)

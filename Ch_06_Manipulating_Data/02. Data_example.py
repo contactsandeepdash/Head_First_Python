@@ -11,8 +11,12 @@ todos.close()
 
 """     Read the file to get the contents   """
 """     with clause, no need to close the stream at the end  """
-with open('todos.txt') as tasks:
-    for chore in tasks:
-        print(chore, end='')
-
+try:
+    with open('todos1.txt') as tasks:
+        for chore in tasks:
+            print(chore, end='')
+except (FileExistsError, FileNotFoundError):
+    print("The file data is missing.")
+except Exception as error:
+    print("Some other error occurred", str(error))
 
