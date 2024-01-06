@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./Ch_04_Code_Reuse/mymodules"]
+}

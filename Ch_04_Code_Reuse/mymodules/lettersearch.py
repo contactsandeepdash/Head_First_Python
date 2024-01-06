@@ -3,12 +3,12 @@
     And the function returns a set to its caller.
 """
 
-def search4vowels3(phrase:str) -> set:
+def search4vowels(phrase:str) -> set:
     """ Display any vowles found in an asked-for phrase     """
     vowels = set('aeiou')
     return vowels.intersection(set(phrase))
 
-def search4vowels4(phrase:str, letters:str='aeiou') -> set:
+def search4letters(phrase:str, letters:str='aeiou') -> set:
     """ return a set of the 'letters' found in the 'phrase'  """
     return set(letters).intersection(set(phrase))
 
